@@ -57,7 +57,7 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
 
     // reseting userClickedPattern for checking the new currect sequence 
-    var userClickedPattern = []
+    userClickedPattern = []
 
     // increased level by one each time this function is called
     level += 1
@@ -84,6 +84,7 @@ function nextSequence() {
 
     // played a sound from the function for it by passing the color
     playSound(randomChosenColor)
+
 }
 
 // function to play sound
@@ -100,7 +101,7 @@ function animatePress(currentColor) {
     }, 100)
 }
 
-
+// reseting the variables to restart the game
 function startOver() {
     level = 0
     gamePattern = []
